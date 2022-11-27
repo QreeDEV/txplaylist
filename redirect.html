@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.discordapp.com/attachments/880282684671262754/1046428912487518208/icon.jpg" rel="shortcut icon" type="image/x-icon">
+    <title>트렉서 플레이리스트</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
+    
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins';
+    }
+    body {
+        height: 100%;
+        background-image: linear-gradient(to right, red, orange, yellow, green, blue, purple, pink);
+        overflow: hidden;
+    }
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 91%;
+        user-select: auto;
+        float: left;
+        flex:1;
+        margin: 0px 13%;
+    }  
+    .main2 {
+        width: 380px;
+        padding: 25px 30px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.281);
+    }
+    .main3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 91%;
+        user-select: auto;
+        flex:1;
+       
+    }  
+    .btn-primary {
+        color: #ffffff;
+        background-color: #696cff;
+        border-color: #696cff;
+        box-shadow: 0 0.125rem 0.25rem 0 #696cff;
+    }
+    .btn {
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.53;
+        color: #fff;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: 0.4375rem 1.25rem;
+        font-size: 0.9375rem;
+        border-radius: 0.375rem;
+        transition: all 0.2s ease-in-out;
+    }
+
+
+
+</style>
+
+<body>
+    <br><br><br><br><br>
+    <div class="main">
+        <div class="main2">
+            <i class="material-icons">첫번째 플레이 리스트 서버</i>
+            <img src="https://i1.sndcdn.com/artworks-smPSmvcWzIUvyuNG-ua4obA-t500x500.jpg" style="height: 300px;" class="static">
+            <br>
+            <br>
+            <button type="button" class="btn btn-primary" style="width: 100%;" onclick="redirect1()"> 접속하기</button>
+        </div>
+    </div>
+    <div>
+
+    </div>
+    <div class="main3">
+        <div class="main2">
+            <i class="material-icons">두번째 플레이 리스트 서버</i>
+            <img src="https://item.kakaocdn.net/do/218bdb82c9a7456ee2080fe14a4642927154249a3890514a43687a85e6b6cc82" style="height: 300px;" class="static">
+            <br><br>
+            <button type="button" class="btn btn-primary" style="width: 100%;" onclick="redirect2()"> 접속하기</button>
+            
+    </div>
+
+    </div>
+
+
+</body>
+<script>
+    function redirect1() {
+        Swal.fire({
+            showConfirmButton: false,
+            title : "접속 중입니다..",
+            text : '첫번째 서버로 접속 중입니다. 잠시만 기다려주세요!',
+            icon : "success",
+            timer: 8000,
+            timerProgressBar: true,
+            allowOutsideClick: false,
+            allowEscapeKey : false,
+            allowEnterKey : false,
+        });
+        setTimeout(function() {
+            window.location.href = `http://trexerply.dothome.co.kr`
+        }, 8000);
+    }
+
+    function redirect2() {
+        Swal.fire({
+            showConfirmButton: false,
+            title : "접속 중입니다..",
+            text : '두번째 서버로 접속 중입니다. 잠시만 기다려주세요!',
+            icon : "success",
+            timer: 8000,
+            timerProgressBar: true,
+            allowOutsideClick: false,
+            allowEscapeKey : false,
+            allowEnterKey : false,
+        });
+        setTimeout(function() {
+            window.location.href = `http://txplaylist.dothome.co.kr`
+        }, 8000);
+    }
+
+</script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</html>
