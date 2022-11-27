@@ -84,7 +84,7 @@
     <br><br><br><br><br>
     <div class="main">
         <div class="main2">
-            <i class="material-icons">첫번째 플레이 리스트 서버</i>
+            <i class="material-icons">트렉서 선호 플레이 리스트 서버</i>
             <img src="https://i1.sndcdn.com/artworks-smPSmvcWzIUvyuNG-ua4obA-t500x500.jpg" style="height: 300px;" class="static">
             <br>
             <br>
@@ -96,14 +96,15 @@
     </div>
     <div class="main3">
         <div class="main2">
-            <i class="material-icons">두번째 플레이 리스트 서버</i>
+            <i class="material-icons">EDM 플레이 리스트 서버</i>
             <img src="https://item.kakaocdn.net/do/218bdb82c9a7456ee2080fe14a4642927154249a3890514a43687a85e6b6cc82" style="height: 300px;" class="static">
             <br><br>
             <button type="button" class="btn btn-primary" style="width: 100%;" onclick="redirect2()"> 접속하기</button>
             
     </div>
-
     </div>
+</div>
+
 
 
 </body>
@@ -112,7 +113,7 @@
         Swal.fire({
             showConfirmButton: false,
             title : "접속 중입니다..",
-            text : '첫번째 서버로 접속 중입니다. 잠시만 기다려주세요!',
+            text : '트렉서 선호 플리 서버로 접속 중입니다. 잠시만 기다려주세요!',
             icon : "success",
             timer: 4000,
             timerProgressBar: true,
@@ -121,15 +122,16 @@
             allowEnterKey : false,
         });
         setTimeout(function() {
-            window.location.href = `http://trexerply.dothome.co.kr`
+            window.location.href = `https://QreeDEV.github.io/plyserver1/`
         }, 4000);
     }
+
 
     function redirect2() {
         Swal.fire({
             showConfirmButton: false,
             title : "접속 중입니다..",
-            text : '두번째 서버로 접속 중입니다. 잠시만 기다려주세요!',
+            text : 'EDM 서버로 접속 중입니다. 잠시만 기다려주세요!',
             icon : "success",
             timer: 4000,
             timerProgressBar: true,
@@ -138,7 +140,7 @@
             allowEnterKey : false,
         });
         setTimeout(function() {
-            window.location.href = `http://txplaylist.dothome.co.kr`
+            window.location.href = `https://QreeDEV.github.io/plyserver2/`
         }, 4000);
     }
 
